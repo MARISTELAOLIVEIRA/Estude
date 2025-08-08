@@ -1,5 +1,5 @@
 :root{
-     
+    
     --main-color: #0b1526;
     --dark-color: #000716;
     --secondary-dark-color: rgb(15, 2, 26);
@@ -12,10 +12,4 @@
 body{
     background-color: var(--dark-color) !important;
     color: white !important;
-}
-.logo{
-    width: 70px;
-    height: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }

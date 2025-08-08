@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "usuarios",  # Aplicativo personalizado para gerenciamento de usuários
-    #"flashcard",  # Aplicativo personalizado para flashcards
+    "flashcard",  # Aplicativo personalizado para flashcards
+    "apostilas",  # Aplicativo personalizado para apostilas
 ]
 
 MIDDLEWARE = [

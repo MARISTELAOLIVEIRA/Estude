@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block 'cabecalho' %}
+
+    <link href="{% static 'usuarios/css/cadastro.css' %}" rel="stylesheet">
+    <link href="{% static 'flashcard/css/novo_flashcard.css' %}" rel="stylesheet">
+    <link href="{% static 'flashcard/css/iniciar_desafio.css' %}" rel="stylesheet">
+    <link href="{% static 'flashcard/css/desafio.css' %}" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+{% endblock 'cabecalho' %}
+
+{% block 'conteudo' %}
+    {% include "partials/header.html" %}
+    <div class="container">
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md">
+                <p class="fonte-secundaria">{{ desafio.titulo }}</p>
+                <hr>
+                <canvas id="grafico1"></canvas>
+            </div>
+            <div class="col-md">
+                <br><br><br><br>
+                
+                <div style="background-color: white;">
+
+                    <canvas id="grafico2"></canvas>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{% static 'flashcard/js/charts.js' %}" defer></script>
+    {{ dados|json_script:"dados-data" }}
+    {{ categorias|json_script:"categorias-data" }}
+    {{ acertos_cat|json_script:"acertos-cat-data"}}
+
+{% endblock 'conteudo' %}
