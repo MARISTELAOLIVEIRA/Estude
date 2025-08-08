@@ -105,4 +105,4 @@ estude/
 
 ---
 
-Desenvolvido com 💙 por [Profa. Maristela]
+Desenvolvido com 💙 pela Prof. Maristela
