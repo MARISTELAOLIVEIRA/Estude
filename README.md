@@ -36,7 +36,8 @@ Plataforma web para gerenciamento de estudos, flashcards e apostilas, desenvolvi
 2. **Crie e ative um ambiente virtual:**
    ```bash
    python3 -m venv venv
-   source venv/bin/activate
+   source venv/bin/activate (linux / MacOS)
+   venv/scripts/activate (Windows)
    ```
 
 3. **Instale as dependências:**
